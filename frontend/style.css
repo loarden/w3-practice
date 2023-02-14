@@ -1,6 +1,43 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body > div.first,
+.first.most-inner {
+  border-bottom: 10px solid red;
+}
+
+div.first {
+  border-radius: 50% 50% 0 0;
+}
+
+div.first + div {
+  border-left: 10px solid rgb(178, 233, 37);
+}
+
+div.most-inner {
+  border-radius: 50%;
+}
+
+div.most-inner:hover {
+  background-color: green;
+}
+
+div.first.most-inner::before {
+  content: "Ö";
+}
+
+div.first.most-inner::after {
+  content: "XD";
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
 }
 
 div {
