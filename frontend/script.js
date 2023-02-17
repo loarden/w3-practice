@@ -1,4 +1,4 @@
-let favoriteBooks = [
+/* let favoriteBooks = [
   {
       title: "Öreg néne őzikéje",
       author: "Fazekas Anna",
@@ -12,7 +12,7 @@ let favoriteBooks = [
       isNewerThan2000: true
   }
 ]
-
+ */
 /* for (const elements of favoriteBooks){
   console.log(elements.title)
 }
@@ -81,17 +81,17 @@ for(const elements of favoriteBooks) {
 
 // TODO: define addFavoritePlace(..) function
 
-function addFavoritePlace(placeName) {
+/* function addFavoritePlace(placeName) {
   if(!placeName.includes("Great")){
     favoritePlaces.push(placeName)
   }
   else {
     return true
   }
-}
+} */
 
 // TODO: define printFavoritePlaces() function
-
+/* 
 function printFavoritePlaces() {
   console.log(`Favorite Places: ${favoritePlaces.length}`) 
   for (let place of favoritePlaces){
@@ -113,7 +113,39 @@ addFavoritePlace("Great Smoky Mountains National Park")
 
 /* console.log(favoritePlaces) */
 
-printFavoritePlaces()
+/* printFavoritePlaces()
+ */
+ 
+const person1 = 'Cyclops';
+const person2 = 'Princess Diana';
+const numOfEyesOfFirst = 1;
+const numOfEyesOfSecond = 2;
 
+let joinedNames = person1 + person2; // It is your task to change '?' to valid code
+  joinedNames = joinedNames.split(" ").join("")
+  console.log(joinedNames)
+const lengthOfJoinedNames = joinedNames.length; // change '?' to valid code
+  console.log(lengthOfJoinedNames)
+const joinedNamesHasEvenCharacters = lengthOfJoinedNames % 2 === 0 // it should be an expressions which gives true or false
+  console.log(joinedNamesHasEvenCharacters)
 
+let diffOfNumOfEyesIsLow = 0; // it should be true or false. Hint: Math.abs(x) can be used, but there are other solutions too
+  if(Math.abs(diffOfNumOfEyesIsLow)<5) {
+    diffOfNumOfEyesIsLow = true
+  }
+  else {
+    diffOfNumOfEyesIsLow = false
+  }
+  console.log(diffOfNumOfEyesIsLow)
 
+const mostLovedOnes = ['Princess Diana', 'David Attenborough', 'Rowan Atkinson', 'David Beckham'];
+const person1IsPerfectToAnyone = mostLovedOnes.includes(person1); // it should be true or false. Hint: you have learnt about a function which checks if an array includes an element
+  console.log(person1IsPerfectToAnyone)
+const person2IsPerfectToAnyone = mostLovedOnes.includes(person2); // it should be true or false
+  console.log(person2IsPerfectToAnyone)
+
+if (joinedNamesHasEvenCharacters && diffOfNumOfEyesIsLow === true) { // final challenge: please code THE condition
+  console.log('❤️');
+} else {
+  console.log("😢");
+}
