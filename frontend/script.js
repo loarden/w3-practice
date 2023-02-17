@@ -35,7 +35,7 @@ else {
  */
 
 //5. feladat
-if (favoriteBooks[0].isNewerThan2000 !== true){
+/* if (favoriteBooks[0].isNewerThan2000 !== true){
   console.log("This book is older than 2000:"+favoriteBooks[0].title)
 }
 else {
@@ -62,7 +62,58 @@ if (favoriteBooks[1].year < 2000){
 }
 else {
   console.log("This book is newer than 2000:"+favoriteBooks[1].title)
+} */
+
+//7. feladat
+
+/* function isNewerThan(year, condition) {
+  return year <= condition
+} */
+/*
+for(const elements of favoriteBooks) {
+  if(favoriteBooks.isNewerThan(elements.year, 2000)){
+    console.log("This book is older than 2000: "+elements.title)
+  }
+  else {
+    console.log("This book is newer than 2000: "+elements.title)
+  }
+} */
+
+// TODO: define addFavoritePlace(..) function
+
+function addFavoritePlace(placeName) {
+  if(!placeName.includes("Great")){
+    favoritePlaces.push(placeName)
+  }
+  else {
+    return true
+  }
 }
+
+// TODO: define printFavoritePlaces() function
+
+function printFavoritePlaces() {
+  console.log(`Favorite Places: ${favoritePlaces.length}`) 
+  for (let place of favoritePlaces){
+    console.log(place)
+  }
+}
+
+let favoritePlaces = []
+
+addFavoritePlace("Galápagos Islands")
+addFavoritePlace("Great Pyramid of Giza")
+addFavoritePlace("Eiffel Tower")
+addFavoritePlace("Great Wall of China")
+addFavoritePlace("Trans Bhutan Trail")
+addFavoritePlace("Colosseum of Rome")
+addFavoritePlace("Great Smoky Mountains National Park")
+
+// TODO: print out favorite places
+
+/* console.log(favoritePlaces) */
+
+printFavoritePlaces()
 
 
 
